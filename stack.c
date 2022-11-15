@@ -4,7 +4,7 @@
 #define MAX 20
 int push(int);
 int pop();
-int stack[MAX] , top=-1;
+int stack[MAX] , top=NULL;
 int main(void){
     int ch,x;
     printf("**********Stack Operation**********\n");
@@ -56,8 +56,8 @@ int main(void){
 int pop()
 {
     int x;
-    if(top==-1)
-            return 0;
+    if(top==NULL)
+            return NULL;
     else
     {
         x=stack[top];
